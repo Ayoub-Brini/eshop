@@ -20,7 +20,8 @@ if ($_SESSION['is_admin'] != 1) {
     <title>Admin Dashboard</title>
 </head>
 <body>
-
+    <link rel="stylesheet" href="/eshop/assets/css/style.css">
+    <?php include("../includes/navbar.php"); ?>
 <h2>Admin Dashboard 🛠️</h2>
 
 <p>Welcome Admin <?php echo $_SESSION['username']; ?></p>

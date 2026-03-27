@@ -40,6 +40,8 @@ if (isset($_POST['add_product'])) {
     <title>Add Product</title>
 </head>
 <body>
+    <link rel="stylesheet" href="/ecommerce/assets/css/style.css">
+
 
 <h2>Add Product</h2>
 
