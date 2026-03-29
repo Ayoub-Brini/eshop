@@ -30,18 +30,22 @@ if (isset($_POST['register'])) {
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="/eshop/assets/css/style.css">
 </head>
 <body>
 
-<h2>Register</h2>
-
-<form method="POST">
-    <input type="text" name="username" placeholder="Username" required><br><br>
-    <input type="email" name="email" placeholder="Email" required><br><br>
-    <input type="password" name="password" placeholder="Password" required><br><br>
-    
-    <button type="submit" name="register">Sign Up</button>
-</form>
+<div class="form-container">
+    <div class="form-card">
+        <h2>Create an account</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" name="register">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="/eshop/auth/login.php">Login here</a></p>
+    </div>
+</div>
 
 </body>
 </html>

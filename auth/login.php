@@ -44,17 +44,21 @@ if (isset($_POST['login'])) {
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="/eshop/assets/css/style.css">
 </head>
 <body>
 
-<h2>Login</h2>
-
-<form method="POST">
-    <input type="email" name="email" placeholder="Email" required><br><br>
-    <input type="password" name="password" placeholder="Password" required><br><br>
-    
-    <button type="submit" name="login">Login</button>
-</form>
+<div class="form-container">
+    <div class="form-card">
+        <h2>Login</h2>
+        <form method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button name="login">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/eshop/auth/register.php">Register here</a></p>
+    </div>
+</div>
 
 </body>
 </html>

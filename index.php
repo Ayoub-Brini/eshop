@@ -1,5 +1,4 @@
 <?php
-include("config/db.php");
-
-echo "Connected successfully!";
+header("Location: /eshop/user/home.php");
+exit;
 ?>

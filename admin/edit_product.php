@@ -31,17 +31,21 @@ if (isset($_POST['update'])) {
 <html>
 <head>
     <title>Edit Product</title>
+    <link rel="stylesheet" href="/eshop/assets/css/style.css">
 </head>
 <body>
 
-<h2>Edit Product</h2>
-
-<form method="POST">
-    <input type="text" name="name" value="<?php echo $product['name']; ?>"><br><br>
-    <input type="number" step="0.01" name="price" value="<?php echo $product['price']; ?>"><br><br>
-
-    <button name="update">Update</button>
-</form>
+<div class="form-container">
+    <div class="form-card">
+        <h2>Edit Product</h2>
+        <form method="POST">
+            <input type="text" name="name" value="<?php echo $product['name']; ?>" placeholder="Product Name" required>
+            <input type="number" step="0.01" name="price" value="<?php echo $product['price']; ?>" placeholder="Price" required>
+            <button name="update">Update Product</button>
+        </form>
+        <p><a href="manage_products.php">Back to Products</a></p>
+    </div>
+</div>
 
 </body>
 </html>

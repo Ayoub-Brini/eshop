@@ -41,21 +41,21 @@ if (isset($_POST['add_product'])) {
     <link rel="stylesheet" href="/eshop/assets/css/style.css">
 </head>
 <body>
+<?php include("../includes/navbar.php"); ?>
 
-
-<h2>Add Product</h2>
-
-<form method="POST" enctype="multipart/form-data">
-    <input type="file" name="image" required><br><br>
-    <input type="text" name="name" placeholder="Product Name" required><br><br>
-    <textarea name="description" placeholder="Description"></textarea><br><br>
-    <input type="number" step="0.01" name="price" placeholder="Price" required><br><br>
-    
-    <button type="submit" name="add_product">Add Product</button>
-</form>
-
-<br>
-<a href="dashboard.php">Back to Dashboard</a>
+<div class="form-container">
+    <div class="form-card">
+        <h2>Add Product</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Product Name" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="number" step="0.01" name="price" placeholder="Price" required>
+            <input type="file" name="image" required>
+            <button type="submit" name="add_product">Add Product</button>
+        </form>
+        <p><a href="dashboard.php">Back to Dashboard</a></p>
+    </div>
+</div>
 
 </body>
 </html>
